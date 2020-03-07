@@ -10,7 +10,7 @@ var rdb *redis.Client
 
 func getRedisConfig() *redis.Options {
 	return &redis.Options{
-		Addr:     "192.168.0.68:16379", // use default Addr
+		Addr:     "localhost:6379",     // use default Addr
 		Password: "password",           // no password set
 		DB:       0,                    // use default DB
 	}
